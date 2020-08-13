@@ -2,16 +2,31 @@ package modelos;
 
 import java.util.ArrayList;
 
-public class Estudiante{
-    //Informacion del estudiante
-    public String matricula;
-    public String nombre;
-    public String apellido;
-    public String facultad;
-    public int edad;
-    public String direccion;
-    public String telefono;
-    public ArrayList<Paralelo> paralelos;
+public class Estudiante {
+	protected String matricula;
+	protected String nombre;
+	protected String apellido;
+    protected String facultad;
+    protected int edad;
+    protected String direccion;
+    protected String telefono;
+    protected ArrayList<Paralelo> paralelos;
+    
+    
+    public Estudiante(String nombre, String apellido, String matricula, String facultad, 
+    		int edad, String direccion, String telefono){
+    	this.nombre = nombre;
+    	this.apellido = apellido;
+    	this.matricula = matricula;
+    	this.apellido = apellido;
+    	this.facultad = facultad;
+    	this.edad = edad;
+    	this.direccion = direccion;
+    	this.telefono = telefono;
+    	paralelos = new ArrayList<Paralelo>();
+    	
+    }
+  
     
     //Getter y setter de Matricula
 
@@ -77,13 +92,4 @@ public class Estudiante{
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    
-    
 }
-        
-    
-    
-    
-            
-        
-        
