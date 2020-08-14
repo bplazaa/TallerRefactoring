@@ -3,7 +3,7 @@ package modelos;
 public class CalculodeNotas {
 
 	
-	//Calcula y devuelve la nota inicial contando examen, deberes, lecciones y talleres. El teorico y el practico se calcula por parcial.
+	//Calcula y devuelve la nota contando examen, deberes, lecciones y talleres. El teorico y el practico se calcula por parcial.
     public static double CalcularNota(Libreta t){
         		
     			double notaInicial=0;
@@ -14,7 +14,7 @@ public class CalculodeNotas {
         return notaInicial;
     }
     
-    //Calcula y devuelve la nota inicial contando examen, deberes, lecciones y talleres. Esta nota es solo el promedio de las dos calificaciones anteriores.
+    //Calcula y devuelve la nota total contando examen, deberes, lecciones y talleres. Esta nota es solo el promedio de las dos calificaciones anteriores.
     public static double CalcularNotaTotal(Paralelo p){
         double notaTotal=0;
         
@@ -24,3 +24,5 @@ public class CalculodeNotas {
         
     }
 }
+
+
