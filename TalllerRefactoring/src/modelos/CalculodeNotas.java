@@ -18,7 +18,7 @@ public class CalculodeNotas {
     public static double CalcularNotaTotal(Paralelo p){
         double notaTotal=0;
         
-        notaTotal=(p.getMateria().notaInicial+p.getMateria().notaFinal)/2;
+        notaTotal=(p.getMateria().getNotaInicial()+p.getMateria().getNotaFinal())/2;
  
         return notaTotal;
         
