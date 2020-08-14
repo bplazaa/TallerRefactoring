@@ -1,10 +1,9 @@
 package modelos;
-package modelos;
 
 import java.util.ArrayList;
 
 public class Ayudante extends Estudiante{
-    protected Alumno est;
+    protected Estudiante est;
     public ArrayList<Paralelo> paralelos;
 
     public Ayudante(String nombre, String apellido, String matricula, String facultad, 
